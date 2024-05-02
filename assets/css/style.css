@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --green:#6EAB05;
+    --gray:#424242;
+    --blue:#06B9C0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    padding: 10px 1vw;
+    width: 98vw;
+    background-color: var(--green);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgb(203, 203, 203);
+}
+.logo-sec{
+    flex-direction: row;
+    gap:20px;
+}
+.logo-sec img{
+    height: 45px;
+    
+}
+.logo-sec span{
+    font-size: 20pt;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+.profile{
+    cursor: pointer;
+    font-size: 16pt;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.search-main{
+    width: 100vw;
+    height: 200px;
+}
+.search-bar{
+    padding: 0 10px;
+    height: 50px;
+    width: 50vw;
+    min-width: 400px;
+    justify-content: space-around;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgb(203, 203, 203);
+}
+.search-bar input{
+    font-size: 16pt;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 90%;
+}
+.search-bar i{
+    font-size: 16pt;
+    cursor: pointer;
+}
+.search-bar div{
+    border-left: 2px solid gray;
+    padding-left: 10px;
+}
+#side-menu{
+    transition: 0.3s;
+    right: -400px;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    background-color: antiquewhite;
+    width: 400px;
+}

@@ -1,0 +1,9 @@
+Colors:
+
+    Green: #6EAB05
+    Bule: #06B9C0
+    Gray: #424242
+
+Font:
+
+    Work-sans
