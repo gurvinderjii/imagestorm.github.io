@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login form</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <section>
+        <form onsubmit="login(event)">
+        <div class="main">
+                <p class="box">Login here</p>
+                <input type="text" name="username" id="username" class="box" placeholder="Username" minlength="6" maxlength="50" required>
+                <input type="password" name="password" id="password" class="box" placeholder="Password" minlength="6" required>
+                <input type="submit" value="Login" class="box" id="btn">
+            </div>
+        </form>
+    </section>
+    <script src="assets/js/login.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

@@ -42,6 +42,7 @@ header{
     text-transform: uppercase;
 }
 .profile{
+    display: none;
     cursor: pointer;
     font-size: 16pt;
     height: 40px;
@@ -83,6 +84,28 @@ header{
     top: 0;
     position: absolute;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: rgb(231, 252, 238);
     width: 400px;
+}
+.icon-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-size: 22pt;
+    /* color: white; */
+}
+.icon-box i{
+    cursor: pointer;
+}
+#loginBtn{
+    /* background-color: rgb(43, 170, 255); */
+    background-color: rgb(235, 235, 235);
+    color: black;
+    font-size: 16pt;
+    border: none;
+    border-radius: 3px;
+    width: 120px;
+    padding: 5px;
+    cursor: pointer;
+    /* box-shadow: 0 5px 10px rgb(72, 72, 72); */
 }

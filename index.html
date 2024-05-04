@@ -10,11 +10,14 @@
     <script src="https://kit.fontawesome.com/f5cb912828.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="init()">
     <!-- *************************  Sidebar section  ************************** -->
 
-    <aside id="side-menu" class="flexBox">
-        <p id="closeMenu">Side bar</p>
+    <aside id="side-menu">
+        <div class="icon-box">
+            <i class="fa-regular fa-circle-xmark" id="closeMenu"></i>
+        </div>
+        <button onclick="logout()">logout</button>
     </aside>
 
 
@@ -25,7 +28,8 @@
             <img src="assets/images/favicon.png" alt="">
             <span>Image Storm</span>
         </div>
-        <div>
+        <div class="flexBox">
+            <button id="loginBtn">Login</button>
             <div class="profile flexBox" id="openMenu">
                 <i class="fa-solid fa-user"></i>
             </div>
