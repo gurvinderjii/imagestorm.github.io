@@ -89,7 +89,7 @@ header{
 }
 .icon-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     padding: 20px 30px;
     font-size: 22pt;
     /* color: white; */
@@ -108,4 +108,29 @@ header{
     padding: 5px;
     cursor: pointer;
     /* box-shadow: 0 5px 10px rgb(72, 72, 72); */
+}
+.noItems{
+    height: 70vh;
+    width: 100vw;
+    font-size: 18pt;
+}
+#content{
+    display: none;
+}
+
+#gallary{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#gallary .gallary-item{
+    margin: 10px;
+    width: 30%;
+    height: fit-content;
+}
+.gallary-item img{
+    width: 100%;
+    box-sizing: border-box;
 }

@@ -36,12 +36,26 @@ function init(){
     if(status==1){
         document.querySelector('.profile').style.display = 'flex';
         document.querySelector('#loginBtn').style.display = 'none';
+        document.querySelector('#noItems').style.display = 'none';
+        document.querySelector('#content').style.display = 'block';
+
+        var gallary = document.getElementById('gallary');
+        for(let i=1;i<11;i++){
+            gallary.innerHTML += createImgItem('assets/images/gallary/img' + i + '.jpg');
+        }
     }else{
         document.querySelector('.profile').style.display = 'none';
         document.querySelector('#loginBtn').style.display = 'block';
+        document.querySelector('#noItems').style.display = 'flex';
+        document.querySelector('#content').style.display = 'none';
     }
 }
 function logout(){
     deleteCookie('status');
     location.reload();
+}
+
+function createImgItem(src){
+    let div = '<div class="gallary-item"><img src="' + src + '" alt="image"></div>';
+    return div;
 }

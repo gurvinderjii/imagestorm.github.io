@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <style>
+    	body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- Gallery items will be dynamically added here -->
+    </div>
+
+    <script>
+    
+    const imageUrls = [
+    'img1',
+    'img2',
+    'img3',
+    'img4',
+    'img5',
+    'img6',
+    'img7',
+    'img8',
+];
+
+// Function to create gallery items
+function createGalleryItem(url) {
+    const galleryItem = document.createElement('div');
+    galleryItem.classList.add('gallery-item');
+
+    const image = document.createElement('img');
+    image.src = 'assets/images/gallary/' + url + '.jpg';
+
+    galleryItem.appendChild(image);
+
+    return galleryItem;
+}
+
+// Function to initialize the gallery
+function initializeGallery() {
+    const galleryContainer = document.querySelector('.gallery');
+
+    imageUrls.forEach(url => {
+        const galleryItem = createGalleryItem(url);
+        galleryContainer.appendChild(galleryItem);
+    });
+}
+
+// Initialize the gallery when the page loads
+window.addEventListener('load', initializeGallery);
+    </script>
+</body>
+</html>

@@ -18,19 +18,19 @@ function login(event){
             setCookie('status',1,1);
             document.location.href = "index.html";
         }else{ 
-            Toastify({
-                text: "Incorrect password",
-                duration: 3000
-                }).showToast();
+            showToast('Incorrect password');
         }
     }else{
-        Toastify({
-            text: "User not found",
-            duration: 3000,
-            style:{
-                color: "black",
-                background:"white"
-            }
-            }).showToast();
+        showToast('User not found');
     }
+}
+function showToast(msg){
+    Toastify({
+        text: msg,
+        duration: 3000,
+        style:{
+            color: "black",
+            background:"white"
+        }
+        }).showToast();
 }
